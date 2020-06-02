@@ -14,7 +14,7 @@ public class App {
     }
 
  ///////Ejercicio individual 16//////////////////
-    public static void mainEjercicioIndividual16(){
+    private static void mainEjercicioIndividual16(){
         int nVentas = 0;
         int total=0;
         escribir("ingrese numero de ventas");
