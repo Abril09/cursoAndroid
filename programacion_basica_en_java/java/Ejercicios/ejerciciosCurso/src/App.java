@@ -5,8 +5,10 @@ public class App {
     private static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-         mainEjercicioIndividual16(); 
-        // mainEjercicioGrupal_5();
+        //descomentar funcion a ejecutar y comentar el resto//
+
+        //  mainEjercicioIndividual16(); 
+        mainEjercicioGrupal_5();
         // mainEjercicioIndividual17();
         
     }
