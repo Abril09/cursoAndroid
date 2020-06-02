@@ -5,13 +5,13 @@ public class App {
     private static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
-
+         mainEjercicioIndividual16(); 
         // mainEjercicioGrupal_5();
         // mainEjercicioIndividual17();
-           mainEjercicioIndividual16(); 
+        
     }
 
-
+ ///////Ejercicio individual 16//////////////////
     public static void mainEjercicioIndividual16(){
         int nVentas = 0;
         int total=0;
@@ -21,12 +21,12 @@ public class App {
             escribir("ingrese venta");
             total = teclado.nextInt() + total;
         }
-        escribir("Total: "+total );
+        escribir("Total: "+ total );
     }
 
 
 
-    ///////Ejercicio individual 7//////////////////
+    ///////Ejercicio individual 17//////////////////
     public static void mainEjercicioIndividual17(){
         int numero =-1;
         int cantidadCifras=0;
