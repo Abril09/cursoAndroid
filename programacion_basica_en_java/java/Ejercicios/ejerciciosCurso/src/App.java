@@ -8,9 +8,11 @@ public class App {
         //descomentar funcion a ejecutar y comentar el resto//
 
         //  mainEjercicioIndividual16(); 
-        mainEjercicioGrupal_5();
+        // mainEjercicioGrupal_5();
         // mainEjercicioIndividual17();
-        
+        // mainEjercicioIndividual18(); 
+        // mainEjercicioIndividual19(); 
+          mainEjercicioGrupal_6();      
     }
 
  ///////Ejercicio individual 16//////////////////
@@ -38,7 +40,7 @@ public class App {
             teclado.nextLine();
         } while (numero < 0 );
 
-        teclado.close();
+    
         cantidadCifras = String.valueOf(numero).split("").length;           
         escribir("cifras: " +cantidadCifras);
     }
@@ -93,7 +95,37 @@ public class App {
         escribir("valor = " +String.valueOf(resultado));
     }
 
-    /////////////////////////////////////////////////////7
+
+    ///////////////////////Ejercicio individual 18//////////////////////////////
+    private static void mainEjercicioIndividual18() {
+        escribir("ingrese venta ej: 12.3");
+        Double venta =Double.parseDouble(teclado.nextLine());
+               venta = ((venta * 0.19)+venta);
+
+        escribir("venta mas IVA = " + String.format("%.3f",venta));        
+    }
+
+        ///////////////////////Ejercicio individual 19//////////////////////////////
+
+    private static void mainEjercicioIndividual19(){
+        escribir("ingrese radio");
+        Double radio =Double.parseDouble(teclado.nextLine());
+        Double area =(3.14 * Math.pow(radio, 2));
+        escribir("area de circulo = " + area);
+    }
+
+///////////////////////Ejercicio grupal 6//////////////////////////////
+    private static void mainEjercicioGrupal_6(){
+        int numero =-1;
+         do {
+            escribir("Ingrese numero entero");          
+            numero = teclado.hasNextInt() ? teclado.nextInt():-1;
+            teclado.nextLine();
+        } while (numero < 0 );
+        escribir("numero= " +numero);   
+    }
+
+
 
     private static void escribir(String message){
         System.out.println(message);
